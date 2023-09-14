@@ -42,6 +42,6 @@ ${listAdmin}
 };
 handler.help = ['infogrup'];
 handler.tags = ['group'];
-handler.command = /^(infogrupo|gro?upinfo|info(gro?up|инфогруппы))$/i;
+handler.command = /^(инфогруппы|gro?upinfo|info(gro?up|инфогруппы))$/i;
 handler.group = true;
 export default handler;
