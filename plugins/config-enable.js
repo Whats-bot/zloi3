@@ -1,182 +1,180 @@
 const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, isROwner}) => {
-  const optionsFull = `*Opción:* ✨ | WELCOME
-*Comando:* ${usedPrefix + command} welcome
-*Descripción:* Activa o desactiva la bienvenida en el grupo.
+  const optionsFull = `*Опция:* ✨ | Приветствие
+*Comando:* ${usedPrefix + command} приветствие
+*Описание:* Приветствие в группе)
 
 --------------------------------
 
-*Opción:* 🌎 | MODO PUBLICO
+*Опция:* 🌎 | MODO PUBLICO
 *Comando:* ${usedPrefix + command} public
-*Descripción:* El Bot se vuelve de uso publico y/o privado.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Описание:* Бот становится общедоступным и/или частным.
+*Nota:* Эта команда может использоваться только владельцами бота.
 
 --------------------------------
 
-*Opción:* 🥵 | MODO HORNY
-*Comando:* ${usedPrefix + command} modohorny
-*Descripción:* Activa o desactiva los comandos +18 en el grupo.
+*Опция:* 🥵 | 18+
+*Comando:* ${usedPrefix + command} 18+
+*Описание:* Включает или выключает команды +18 в группе.
 
 --------------------------------
 
-*Opción:* 🔗 | ANTILINK
-*Comando:* ${usedPrefix + command} antilink
-*Descripción:* Activa o desactiva el anti-enlaces de WhatsApp.
-*Nota:* Se necesita tener activo el restrict.
+*Опция:* 🔗 | АНТИССЫЛКА
+*Comando:* ${usedPrefix + command} антиссылка
+*Описание:* Включите или выключите функцию защиты от ссылок в WhatsApp.
+*Nota:* Бот должен быть админом в группе.
 
 --------------------------------
 
-*Opción:* 🔗 | ANTILINK 2
+*Опция:* 🔗 | ANTILINK 2
 *Comando:* ${usedPrefix + command} antilink2
-*Descripción:* Activa o desactiva el anti-enlaces que inician en HTTPS.
-*Nota:* Se necesita tener activo el restrict.
+*Описание:* Включите или выключите функцию защиты от ссылок, которые начинаются по протоколу HTTPS.
+*Nota:* Бот должен быть админом в группе.
 
 --------------------------------
 
-*Opción:* 🔎 | DETECT
-*Comando:* ${usedPrefix + command} detect
-*Descripción:* Activa o desacriva las notificaciones de cambios en el grupo.
+*Опция:* 🔎 | Изменения
+*Comando:* ${usedPrefix + command} изменения
+*Описание:* Включает или отключает уведомления об изменениях в группе.
 
 --------------------------------
 
-*Opción:* 🔎 | DETECT 2
-*Comando:* ${usedPrefix + command} detect2
-*Descripción:* Detecta modificaciones en el grupo y mantiene una mejor gestion.
+*Опция:* 🔎 | Изменения 2
+*Comando:* ${usedPrefix + command} изменения2
+*Описание:* Обнаруживает изменения в группе и поддерживает улучшенный функционал.
 
 --------------------------------
 
-*Opción:* ❗ | RESTRICT
-*Comando:* ${usedPrefix + command} restrict
-*Descripción:* Activa o desactiva las restricciones del Bot, como la de sacar o agregar personas a un grupo.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Опция:* ❗ | Бот Админ
+*Comando:* ${usedPrefix + command} ботадмин
+*Описание:* Включает или отключает ограничения бота, такие как удаление или добавление людей в группу.
+*Nota:* Эта команда может использоваться только владельцами бота.
 
 --------------------------------
 
-*Opción:* ☑️ | AUTOREAD
-*Comando:* ${usedPrefix + command} autoread
-*Descripción:* Marca como leido los mensajes y los estados automáticamente.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Опция:* ☑️ | Авточтение
+*Comando:* ${usedPrefix + command} авточтение
+*Описание:* Сообщения и статусы автоматически помечаются как прочитанные.
+*Nota:* Эта команда может использоваться только владельцами бота.
 
 --------------------------------
 
-*Opción:* 🔊 | AUDIOS
-*Comando:* ${usedPrefix + command} audios
-*Descripción:* Activa o desactiva los comandos de audios sin prefijos, en el grupo.
+*Опция:* 🔊 | Аудио
+*Comando:* ${usedPrefix + command} аудио
+*Описание:* Включает или выключает команды для аудио без префиксов в группе.
+--------------------------------
+
+*Опция:* 👾 | Автостикер
+*Comando:* ${usedPrefix + command} автостикер
+*Описание:* Все изображения или видео, отправленные в группе, бот делает стикерами.
+--------------------------------
+
+*Опция:* 💬 | Личка
+*Comando:* ${usedPrefix + command} личка
+*Описание:* Бот будет отвечать на команды только в том случае, если это приватный чат.
+*Nota:* Эта команда может использоваться только владельцами бота.
 
 --------------------------------
 
-*Opción:* 👾 | AUTOSTICKER
-*Comando:* ${usedPrefix + command} autosticker 
-*Descripción:* Todas las imagenes o videos enviados en el grupo se convierten en stickers. 
+*Опция:* 🏢 | Группа
+*Comando:* ${usedPrefix + command} группа
+*Описание:* Бот будет отвечать на команды только в группе.
+*Nota:* Эта команда может использоваться только владельцами бота.
 
 --------------------------------
 
-*Opción:* 💬 | PCONLY
-*Comando:* ${usedPrefix + command} pconly
-*Descripción:* El Bot solo responderá a los comandos si es un chat privado.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Опция:* ❌ | Антираз
+*Comando:* ${usedPrefix + command} антираз
+*Описание:* Изображения, отправленные для просмотра только один раз, всегда пересылаются ботом в группу.
 
 --------------------------------
 
-*Opción:* 🏢 | GCONLY
-*Comando:* ${usedPrefix + command} gconly
-*Descripción:* El Bot solo respondera a los comandos si es un grupo. 
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Опция:* 📵 | Антизвонок
+*Comando:* ${usedPrefix + command} антизвонок
+*Описание:* Бот заблокирует людей, которые звонят Боту.
+*Nota:* Эта команда может использоваться только владельцами бота.
 
 --------------------------------
 
-*Opción:* ❌ | ANTIVIEWONCE 
-*Comando:* ${usedPrefix + command} antiviewonce
-*Descripción:* Las imagenes enviadas para ver solo una vez, son reenviadas normal por el Bot. 
+*Опция:* 💬 | Антиличка
+*Comando:* ${usedPrefix + command} антиличка
+*Описание:* Бот заблокирует людей, которые пишут в личку боту.
+*Nota:* Эта команда может использоваться только владельцами бота.
 
 --------------------------------
 
-*Opción:* 📵 | ANTILLAMADAS
-*Comando:* ${usedPrefix + command} anticall
-*Descripción:* El Bot bloquerá a las personas que llamen al Bot. 
-*Nota:* Este comando solo podra ser usado por owners del Bot.
+*Опция:* 🤬 | Антимат
+*Comando:* ${usedPrefix + command} антимат
+*Описание:* Бот обнаруживает нецензурную лексику и предупреждает участника группы, прежде чем его удалят.
+*Nota:* Бот должен быть админом в группе.
 
 --------------------------------
 
-*Opción:* 💬 | ANTIPRIVADO
-*Comando:* ${usedPrefix + command} antiprivado
-*Descripción:* El Bot bloquerá a las personas que escriban al privado del Bot. 
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Опция:* 🕸️ | Антивирус
+*Comando:* ${usedPrefix + command} антивирус
+*Описание:* Бот обнаруживает длинные тексты, которые могут быть вирусами и вызывать задержку в чате, и удаляет пользователя.
+*Nota:* Бот должен быть админом в группе.
 
 --------------------------------
 
-*Opción:* 🤬 | ANTITOXIC
-*Comando:* ${usedPrefix + command} antitoxic
-*Descripción:* Detecta la malas palabras y advierte al participante del grupo, antes de ser eliminado.
-*Nota:* Se necesita tener activo el restrict.
+*Опция:* 👎 | Антиараб
+*Comando:* ${usedPrefix + command} антиараб
+*Описание:* Если к группе присоединяется арабский номер, бот автоматически удаляет его.
+*Nota:* Необходимо, чтобы были активны ПРИВЕТСТВИЕ и БОТАДМИН.
 
 --------------------------------
 
-*Opción:* 🕸️ | ANTITRABAS
-*Comando:* ${usedPrefix + command} antitraba
-*Descripción:* El Bot detecta textos largos que podrian ser virus y causar lag en el chat y elimina al usuario.
-*Nota:* Se necesita tener activo el restrict.
+*Опция:* 👎 | Антиараб 2
+*Comando:* ${usedPrefix + command} антиараб2
+*Описание:* Si un numero árabe escribe en el grupo, el Bot lo elimina automaticamente.
+*Nota:* Бот должен быть админом в группе.
 
 --------------------------------
 
-*Opción:* 👎 | ANTIARABES
-*Comando:* ${usedPrefix + command} antiarabes
-*Descripción:* Si un numero árabe se uné al grupo, el Bot lo elimina automaticamente.
-*Nota:* Se necesita tener activo el welcome y el restrict.
+*Опция:* 🤖 | Допбот
+*Comando:* ${usedPrefix + command} допбот
+*Описание:* Включите или выключите использование команды для дополнительных ботов (${usedPrefix}serbot / ${usedPrefix}jadibot).
+*Nota:* Эта команда может использоваться только владельцами бота.
 
 --------------------------------
 
-*Opción:* 👎 | ANTIARABES 2
-*Comando:* ${usedPrefix + command} antiarabes2
-*Descripción:* Si un numero árabe escribe en el grupo, el Bot lo elimina automaticamente.
-*Nota:* Se necesita tener activo el restrict.
+*Опция:* 👑 | Только админы
+*Comando:* ${usedPrefix + command} толькоадмины
+*Описание:* Бот будет отвечать только администраторам группы.
 
 --------------------------------
 
-*Opción:* 🤖 | MODEJADIBOT
-*Comando:* ${usedPrefix + command} modejadibot
-*Descripción:* Activa o desactiva el uso del comando para sub bots (${usedPrefix}serbot / ${usedPrefix}jadibot). 
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
-
---------------------------------
-
-*Opción:* 👑 | MODOADMIN
-*Comando:* ${usedPrefix + command} modoadmin
-*Descripción:* El Bot solo responderá a los admins del grupo.
-
---------------------------------
-
-*Opción:* 😃 | SIMSIMI
+*Опция:* 😃 | SIMSIMI
 *Comando:* ${usedPrefix + command} simsimi
-*Descripción:* El Bot empezará a responder a los mensajes usando la IA de SimSimi.
+*Описание:* Бот начнет отвечать на сообщения, используя искусственный интеллект SimSimi.
 
 --------------------------------
 
-*Opción:* ⏳ | ANTISPAM
-*Comando:* ${usedPrefix + command} antispam
-*Descripción:* El Bot detecta cuando un usuario hace spam de comando y lo banea por 5 segundos y lo advierte.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.
+*Опция:* ⏳ | Антиспам
+*Comando:* ${usedPrefix + command} антиспам
+*Описание:* Бот обнаруживает, когда пользователь рассылает командный спам, блокирует его на 5 секунд и предупреждает об этом.
+*Nota:* Эта команда может использоваться только владельцами бота.
 
 --------------------------------
 
-*Opción:* 🛡️ | ANTIDELETE
-*Comando:* ${usedPrefix + command} antidelete
-*Descripción:* El Bot detecta cuando un usuario elimina un mensaje y lo reenvía.
+*Опция:* 🛡️ | Антиудаление
+*Comando:* ${usedPrefix + command} антиудаление
+*Описание:* Бот определяет, когда пользователь удаляет сообщение, и пересылает его повторно в личные сообщения пользователя.
 
 --------------------------------
 
-*Opción:* 🔊 | AUDIOS_BOT
-*Comando:* ${usedPrefix + command} audios_bot
-*Descripción:* Se desactivan los audios del Bot del menuaudios para todos los chats privados.
-*Nota:* Este comando solo podrá ser usado por owners del Bot.`.trim();
+*Опция:* 🔊 | Аудиобот
+*Comando:* ${usedPrefix + command} аудиобот
+*Описание:* Для всех приватных чатов отключены аудиозаписи бота из меню аудиофайлов.
+*Nota:* Эта команда может использоваться только владельцами бота.`.trim();
 
-  const isEnable = /true|enable|(turn)?on|1/i.test(command);
+  const isEnable = /включить|enable|(turn)?on|1/i.test(command);
   const chat = global.db.data.chats[m.chat];
   const user = global.db.data.users[m.sender];
   const bot = global.db.data.settings[conn.user.jid] || {};
   const type = (args[0] || '').toLowerCase();
   let isAll = false; const isUser = false;
   switch (type) {
-    case 'welcome':
+    case 'приветствие':
       if (!m.isGroup) {
         if (!isOwner) {
           global.dfail('group', m, conn);
@@ -188,7 +186,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.welcome = isEnable;
       break;
-    case 'detect':
+    case 'изменения':
       if (!m.isGroup) {
         if (!isOwner) {
           global.dfail('group', m, conn);
@@ -200,7 +198,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.detect = isEnable;
       break;
-    case 'detect2':
+    case 'изменения2':
       if (!m.isGroup) {
         if (!isOwner) {
           global.dfail('group', m, conn);
@@ -221,7 +219,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.simi = isEnable;
       break;
-    case 'antiporno':
+    case 'антипорно':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -230,7 +228,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.antiporno = isEnable;
       break;
-    case 'delete':
+    case 'удаление':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -239,7 +237,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.delete = isEnable;
       break;
-    case 'antidelete':
+    case 'антиудаление':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -248,7 +246,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.antidelete = isEnable;
       break;
-    case 'public':
+    case 'публичный':
       isAll = true;
       if (!isROwner) {
         global.dfail('rowner', m, conn);
@@ -256,7 +254,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       global.opts['self'] = !isEnable;
       break;
-    case 'antilink':
+    case 'антиссылка':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -265,7 +263,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.antiLink = isEnable;
       break;
-    case 'antilink2':
+    case 'антиссылка2':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -274,7 +272,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.antiLink2 = isEnable;
       break;
-    case 'antiviewonce':
+    case 'антираз':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -283,7 +281,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.antiviewonce = isEnable;
       break;
-    case 'modohorny':
+    case '18+':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -292,7 +290,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.modohorny = isEnable;
       break;
-    case 'modoadmin':
+    case 'толькоадмины':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -301,7 +299,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.modoadmin = isEnable;
       break;
-    case 'autosticker':
+    case 'автостикер':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -310,7 +308,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.autosticker = isEnable;
       break;
-    case 'audios':
+    case 'аудио':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -319,7 +317,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.audios = isEnable;
       break;
-    case 'restrict':
+    case 'ботадмин':
       isAll = true;
       if (!isOwner) {
         global.dfail('owner', m, conn);
@@ -327,7 +325,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       bot.restrict = isEnable;
       break;
-    case 'audios_bot':
+    case 'аудиобот':
       isAll = true;
       if (!isOwner) {
         global.dfail('owner', m, conn);
@@ -352,7 +350,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       bot.autoread2 = isEnable;
       global.opts['autoread'] = isEnable;
       break;
-    case 'pconly':
+    case 'личка':
     case 'privateonly':
       isAll = true;
       if (!isROwner) {
@@ -361,7 +359,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       global.opts['pconly'] = isEnable;
       break;
-    case 'gconly':
+    case 'группа':
     case 'grouponly':
       isAll = true;
       if (!isROwner) {
@@ -379,7 +377,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       global.opts['swonly'] = isEnable;
       break;
-    case 'anticall':
+    case 'антизвонок':
       isAll = true;
       if (!isROwner) {
         global.dfail('rowner', m, conn);
@@ -387,7 +385,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       bot.antiCall = isEnable;
       break;
-    case 'antiprivado':
+    case 'антиличка':
       isAll = true;
       if (!isROwner) {
         global.dfail('rowner', m, conn);
@@ -403,7 +401,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       bot.modejadibot = isEnable;
       break;
-    case 'antispam':
+    case 'антиспам':
       isAll = true;
       if (!isROwner) {
         global.dfail('rowner', m, conn);
@@ -411,7 +409,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       bot.antispam = isEnable;
       break;
-    case 'antitoxic':
+    case 'антимат':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -420,7 +418,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.antiToxic = isEnable;
       break;
-    case 'antitraba':
+    case 'антивирус':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -429,7 +427,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.antiTraba = isEnable;
       break;
-    case 'antiarabes':
+    case 'антиараб':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -438,7 +436,7 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       }
       chat.antiArab = isEnable;
       break;
-    case 'antiarabes2':
+    case 'антиараб2':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
           global.dfail('admin', m, conn);
@@ -451,9 +449,9 @@ const handler = async (m, {conn, usedPrefix, command, args, isOwner, isAdmin, is
       if (!/[01]/.test(command)) return await conn.sendMessage(m.chat, {text: optionsFull}, {quoted: m});
       throw false;
   }
-  conn.sendMessage(m.chat, {text: `🗂️ 𝐎𝐏𝐂𝐈𝐎𝐍: ${type}\n🎚️ 𝐄𝐒𝐓𝐀𝐃𝐎: ${isEnable ? 'ACTIVADO' : 'DESACTIVADO'}\n📣 𝐏𝐀𝐑𝐀: ${isAll ? 'ESTE BOT' : isUser ? '' : 'ESTE CHAT'}`}, {quoted: m});
+  conn.sendMessage(m.chat, {text: `🗂️ Опция: ${type}\n🎚️ Статус: ${isEnable ? 'Включена' : 'Выключена'}\n📣 Для: ${isAll ? 'Бота' : isUser ? '' : 'Группы'}`}, {quoted: m});
 };
 handler.help = ['en', 'dis'].map((v) => v + 'able <option>');
 handler.tags = ['group', 'owner'];
-handler.command = /^((en|dis)able|(tru|fals)e|(turn)?[01])$/i;
+handler.command = /^((en|dis)able|(вкл|выкл)ючить|(turn)?[01])$/i;
 export default handler;
