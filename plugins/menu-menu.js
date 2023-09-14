@@ -47,7 +47,7 @@ ${readMore}
 
 
 ┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝕁𝕌𝔼𝔾𝕆𝕊 />*
+┃ *< Приколы />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🎖️ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}fake *<texto1> <@tag> <texto2>*_
@@ -85,92 +85,61 @@ ${readMore}
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ />*
+┃ *< Включение/отключение опций бота />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *welcome*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *welcome*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *modohorny*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *modohorny*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antilink*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antilink*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antilink2*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antilink2*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *detect*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *detect*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *audios*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *audios*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *autosticker*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *autosticker*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antiviewonce*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antiviewonce*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antitoxic*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antitoxic*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antitraba*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antitraba*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antiarabes*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antiarabes*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *modoadmin*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *modoadmin*_
-┣ ඬ⃟ ☑️ _${usedPrefix}enable *antidelete*_
-┣ ඬ⃟ ☑️ _${usedPrefix}disable *antidelete*_
+┣ ඬ⃟ ☑️ _${usedPrefix}включить *приветствие*_
+┣ ඬ⃟ ☑️ _${usedPrefix}выключить *приветствие*_
+┣ ඬ⃟ ☑️ _${usedPrefix}включить *18+*_
+┣ ඬ⃟ ☑️ _${usedPrefix}выключить *18+*_
+┣ ඬ⃟ ☑️ _${usedPrefix}включить *антиссылка*_
+┣ ඬ⃟ ☑️ _${usedPrefix}выключить *антиссылка*_
+┣ ඬ⃟ ☑️ _${usedPrefix}включить *антиссылка2*_
+┣ ඬ⃟ ☑️ _${usedPrefix}выключить *антиссылка2*_
+┣ ඬ⃟ ☑️ _${usedPrefix}включить *изменения*_
+┣ ඬ⃟ ☑️ _${usedPrefix}выключить *изменения*_
+┣ ඬ⃟ ☑️ _${usedPrefix}включить *аудио*_
+┣ ඬ⃟ ☑️ _${usedPrefix}выключить *аудио*_
+┣ ඬ⃟ ☑️ _${usedPrefix}включить *автостикер*_
+┣ ඬ⃟ ☑️ _${usedPrefix}выключить *автостикер*_
+┣ ඬ⃟ ☑️ _${usedPrefix}включить *антираз*_
+┣ ඬ⃟ ☑️ _${usedPrefix}выключить *антираз*_
+┣ ඬ⃟ ☑️ _${usedPrefix}включить *антимат*_
+┣ ඬ⃟ ☑️ _${usedPrefix}выключить *антимат*_
+┣ ඬ⃟ ☑️ _${usedPrefix}включить *антивирус*_
+┣ ඬ⃟ ☑️ _${usedPrefix}выключить *антивирус*_
+┣ ඬ⃟ ☑️ _${usedPrefix}включить *антиараб*_
+┣ ඬ⃟ ☑️ _${usedPrefix}выключить *антиараб*_
+┣ ඬ⃟ ☑️ _${usedPrefix}включить *толькоадмины*_
+┣ ඬ⃟ ☑️ _${usedPrefix}выключить *толькоадмины*_
+┣ ඬ⃟ ☑️ _${usedPrefix}включить *антиудаление*_
+┣ ඬ⃟ ☑️ _${usedPrefix}выключить *антиудаление*_
 ┗━━━━━━━━━━━━━━━━┛
 
-┏━━━━━━━━━━━━━━━━┓
-┣ *< ℝ𝔼ℙ𝕆ℝ𝕋𝔸ℝ 𝔼ℝℝ𝕆ℝ𝔼𝕊 />*
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🔰 _${usedPrefix}reporte *<texto>*_
-┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔻𝔼𝕊ℂ𝔸ℝ𝔾𝔸𝕊 />*
+┃ *< Скачивание медиа/>*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 📥 _${usedPrefix}instagram *<enlace / link / url>*_
-┣ ඬ⃟ 📥 _${usedPrefix}mediafire *<enlace / link / url>*_
-┣ ඬ⃟ 📥 _${usedPrefix}gitclone *<enlace / link / url>*_
-┣ ඬ⃟ 📥 _${usedPrefix}gdrive *<enlace / link / url>*_
+
 ┣ ඬ⃟ 📥 _${usedPrefix}tiktok *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}tiktokimg *<enlace / link / url>*_
-┣ ඬ⃟ 📥 _${usedPrefix}xnxxdl *<enlace / link / url>*_
-┣ ඬ⃟ 📥 _${usedPrefix}xvideosdl *<enlace / link / url>*_
-┣ ඬ⃟ 📥 _${usedPrefix}twitter *<enlace / link / url>*_
-┣ ඬ⃟ 📥 _${usedPrefix}fb *<enlace / link / url>*_
-┣ ඬ⃟ 📥 _${usedPrefix}ytshort *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}ytmp3 *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}ytmp4 *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}ytmp3doc *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}ytmp4doc *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}videodoc *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}dapk2 *<enlace / link / url>*_
-┣ ඬ⃟ 📥 _${usedPrefix}stickerpack *<enlace / link / url>*_
-┣ ඬ⃟ 📥 _${usedPrefix}play *<texto>*_
+┣ ඬ⃟ 📥 _${usedPrefix}песня *<Исполнитель Название>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}play2 *<texto>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}play.1 *<texto>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}play.2 *<texto>*_
-┣ ඬ⃟ 📥 _${usedPrefix}playdoc *<texto>*_
-┣ ඬ⃟ 📥 _${usedPrefix}playdoc2 *<texto>*_
-┣ ඬ⃟ 📥 _${usedPrefix}playlist *<texto>*_
-┣ ඬ⃟ 📥 _${usedPrefix}spotify *<texto>*_
-┣ ඬ⃟ 📥 _${usedPrefix}ringtone *<texto>*_
-┣ ඬ⃟ 📥 _${usedPrefix}soundcloud *<texto>*_
-┣ ඬ⃟ 📥 _${usedPrefix}imagen *<texto>*_
-┣ ඬ⃟ 📥 _${usedPrefix}pinterest *<texto>*_
-┣ ඬ⃟ 📥 _${usedPrefix}wallpaper *<texto>*_
-┣ ඬ⃟ 📥 _${usedPrefix}pptiktok *<nombre de usuario>*_
-┣ ඬ⃟ 📥 _${usedPrefix}igstalk *<nombre de usuario>*_
-┣ ඬ⃟ 📥 _${usedPrefix}igstory *<nombre de usuario>*_
-┣ ඬ⃟ 📥 _${usedPrefix}tiktokstalk *<username>*_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔹𝕌𝕊ℂ𝔸𝔻𝕆ℝ𝔼𝕊 />*
+┃ *< Поиск />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🔍 _${usedPrefix}githubsearch *<texto>*_
+
 ┣ ඬ⃟ 🔍 _${usedPrefix}pelisplus *<texto>*_
 ┣ ඬ⃟ 🔍 _${usedPrefix}modapk *<texto>*_
-┣ ඬ⃟ 🔍 _${usedPrefix}stickersearch *<texto>*_
-┣ ඬ⃟ 🔍 _${usedPrefix}stickersearch2 *<texto>*_
-┣ ඬ⃟ 🔍 _${usedPrefix}xnxxsearch *<texto>*_
-┣ ඬ⃟ 🔍 _${usedPrefix}animeinfo *<texto>*_
 ┣ ඬ⃟ 🔍 _${usedPrefix}google *<texto>*_
 ┣ ඬ⃟ 🔍 _${usedPrefix}letra *<texto>*_
 ┣ ඬ⃟ 🔍 _${usedPrefix}wikipedia *<texto>*_
@@ -179,9 +148,9 @@ ${readMore}
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
-┃ *< 𝔾ℝ𝕌ℙ𝕆𝕊 />* 
+┃ *< Команды для группы />* 
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 💎 _${usedPrefix}add *<numero>*_
+┣ ඬ⃟ 💎 _${usedPrefix}добавить *<numero>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}kick *<@tag>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}kick2 *<@tag>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}listanum *<texto>*_
@@ -190,7 +159,7 @@ ${readMore}
 ┣ ඬ⃟ 💎 _${usedPrefix}grouptime *<opcion> <tiempo>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}promote *<@tag>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}demote *<@tag>*_
-┣ ඬ⃟ 💎 _admins *<texto>*_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+┣ ඬ⃟ 💎 _${usedPrefix}admins *<texto>*_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
 ┣ ඬ⃟ 💎 _${usedPrefix}demote *<@tag>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}infogroup_
 ┣ ඬ⃟ 💎 _${usedPrefix}resetlink_
@@ -198,7 +167,7 @@ ${readMore}
 ┣ ඬ⃟ 💎 _${usedPrefix}setname *<texto>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}setdesc *<texto>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}invocar *<texto>*_
-┣ ඬ⃟ 💎 _${usedPrefix}setwelcome *<texto>*_
+┣ ඬ⃟ 💎 _${usedPrefix}setприветствие *<texto>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}setbye *<texto>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}hidetag *<texto>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}hidetag *<audio>*_
@@ -324,7 +293,7 @@ ${readMore}
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< 𝔸𝕌𝔻𝕀𝕆𝕊 />*   
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🔊 _${usedPrefix}menuaudios_
+┣ ඬ⃟ 🔊 _${usedPrefix}menuаудио_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
@@ -431,26 +400,26 @@ ${readMore}
 ┣ ඬ⃟ 👑 _${usedPrefix}blocklist_
 ┣ ඬ⃟ 👑 _${usedPrefix}block *<@tag / numero>*_
 ┣ ඬ⃟ 👑 _${usedPrefix}unblock *<@tag / numero>*_
-┣ ඬ⃟ 👑 _${usedPrefix}enable *restrict*_
-┣ ඬ⃟ 👑 _${usedPrefix}disable *restrict*_
-┣ ඬ⃟ 👑 _${usedPrefix}enable *autoread*_
-┣ ඬ⃟ 👑 _${usedPrefix}disable *autoread*_
-┣ ඬ⃟ 👑 _${usedPrefix}enable *public*_
-┣ ඬ⃟ 👑 _${usedPrefix}disable *public*_
-┣ ඬ⃟ 👑 _${usedPrefix}enable *pconly*_
-┣ ඬ⃟ 👑 _${usedPrefix}disable *pconly*_
-┣ ඬ⃟ 👑 _${usedPrefix}enable *gconly*_
-┣ ඬ⃟ 👑 _${usedPrefix}disable *gconly*_
-┣ ඬ⃟ 👑 _${usedPrefix}enable *anticall*_
-┣ ඬ⃟ 👑 _${usedPrefix}disable *anticall*_
-┣ ඬ⃟ 👑 _${usedPrefix}enable *antiprivado*_
-┣ ඬ⃟ 👑 _${usedPrefix}disable *antiprivado*_
-┣ ඬ⃟ 👑 _${usedPrefix}enable *modejadibot*_
-┣ ඬ⃟ 👑 _${usedPrefix}disable *modejadibot*_
-┣ ඬ⃟ 👑 _${usedPrefix}enable *audios_bot*_
-┣ ඬ⃟ 👑 _${usedPrefix}disable *audios_bot*_
-┣ ඬ⃟ 👑 _${usedPrefix}enable *antispam*_
-┣ ඬ⃟ 👑 _${usedPrefix}disable *antispam*_
+┣ ඬ⃟ 👑 _${usedPrefix}включить *restrict*_
+┣ ඬ⃟ 👑 _${usedPrefix}выключить *restrict*_
+┣ ඬ⃟ 👑 _${usedPrefix}включить *autoread*_
+┣ ඬ⃟ 👑 _${usedPrefix}выключить *autoread*_
+┣ ඬ⃟ 👑 _${usedPrefix}включить *public*_
+┣ ඬ⃟ 👑 _${usedPrefix}выключить *public*_
+┣ ඬ⃟ 👑 _${usedPrefix}включить *pconly*_
+┣ ඬ⃟ 👑 _${usedPrefix}выключить *pconly*_
+┣ ඬ⃟ 👑 _${usedPrefix}включить *gconly*_
+┣ ඬ⃟ 👑 _${usedPrefix}выключить *gconly*_
+┣ ඬ⃟ 👑 _${usedPrefix}включить *anticall*_
+┣ ඬ⃟ 👑 _${usedPrefix}выключить *anticall*_
+┣ ඬ⃟ 👑 _${usedPrefix}включить *antiprivado*_
+┣ ඬ⃟ 👑 _${usedPrefix}выключить *antiprivado*_
+┣ ඬ⃟ 👑 _${usedPrefix}включить *modejadibot*_
+┣ ඬ⃟ 👑 _${usedPrefix}выключить *modejadibot*_
+┣ ඬ⃟ 👑 _${usedPrefix}включить *аудио_bot*_
+┣ ඬ⃟ 👑 _${usedPrefix}выключить *аудио_bot*_
+┣ ඬ⃟ 👑 _${usedPrefix}включить *antispam*_
+┣ ඬ⃟ 👑 _${usedPrefix}выключить *antispam*_
 ┣ ඬ⃟ 👑 _${usedPrefix}msg *<texto>*_
 ┣ ඬ⃟ 👑 _${usedPrefix}banchat_
 ┣ ඬ⃟ 👑 _${usedPrefix}unbanchat_
