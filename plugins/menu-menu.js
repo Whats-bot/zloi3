@@ -17,13 +17,13 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const rtotalreg = Object.values(global.db.data.users).filter((user) => user.registered == true).length;
     const more = String.fromCharCode(8206);
     const readMore = more.repeat(850);
-    const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
+    const номерuser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
     const str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
 ║    ◉— *★JoKeR★* —◉
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ *Привет, ${taguser}*
+║➤ *Привет, ${номерuser}*
 ║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
 ║➤ *Создатель:* ZloiAdmiN
 ║➤ *Номер создателя:* wa.me/79524197466
@@ -50,29 +50,29 @@ ${readMore}
 ┃ *< Приколы />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🎖️ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}fake *<texto1> <@tag> <texto2>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}fake *<ваш текст1> <@номер> <ваш текст2>*_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}ppt *<papel / tijera /piedra>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}prostituto *<nombre / @tag>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}prostituta *<nombre / @tag>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}gay2 *<nombre / @tag>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}lesbiana *<nombre / @tag>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}pajero *<nombre / @tag>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}pajera *<nombre / @tag>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}puto *<nombre / @tag>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}puta *<nombre / @tag>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}manco *<nombre / @tag>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}manca *<nombre / @tag>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}rata *<nombre / @tag>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}love *<nombre / @tag>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}doxear *<nombre / @tag>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}pregunta *<texto>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}suitpvp *<@tag>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}prostituto *<nombre / @номер>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}prostituta *<nombre / @номер>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}gay2 *<nombre / @номер>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}lesbiana *<nombre / @номер>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}pajero *<nombre / @номер>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}pajera *<nombre / @номер>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}puto *<nombre / @номер>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}puta *<nombre / @номер>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}manco *<nombre / @номер>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}manca *<nombre / @номер>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}rata *<nombre / @номер>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}love *<nombre / @номер>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}doxear *<nombre / @номер>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}pregunta *<ваш текст>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}suitpvp *<@номер>*_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}slot *<apuesta>*_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}ttt *<nombre sala>*_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}delttt_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}acertijo_
-┣ ඬ⃟ 🎖️ _${usedPrefix}simi *<texto>*_
-┣ ඬ⃟ 🎖️ _${usedPrefix}top *<texto>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}simi *<ваш текст>*_
+┣ ඬ⃟ 🎖️ _${usedPrefix}top *<ваш текст>*_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}topgays_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}topotakus_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}formarpareja_
@@ -129,56 +129,44 @@ ${readMore}
 ┣ ඬ⃟ 📥 _${usedPrefix}videodoc *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}dapk2 *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}песня *<Исполнитель Название>*_
-┣ ඬ⃟ 📥 _${usedPrefix}play2 *<texto>*_
-┣ ඬ⃟ 📥 _${usedPrefix}play.1 *<texto>*_
-┣ ඬ⃟ 📥 _${usedPrefix}play.2 *<texto>*_
+┣ ඬ⃟ 📥 _${usedPrefix}play2 *<ваш текст>*_
+┣ ඬ⃟ 📥 _${usedPrefix}play.1 *<ваш текст>*_
+┣ ඬ⃟ 📥 _${usedPrefix}play.2 *<ваш текст>*_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< Поиск />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 
-┣ ඬ⃟ 🔍 _${usedPrefix}pelisplus *<texto>*_
-┣ ඬ⃟ 🔍 _${usedPrefix}modapk *<texto>*_
-┣ ඬ⃟ 🔍 _${usedPrefix}google *<texto>*_
-┣ ඬ⃟ 🔍 _${usedPrefix}letra *<texto>*_
-┣ ඬ⃟ 🔍 _${usedPrefix}wikipedia *<texto>*_
-┣ ඬ⃟ 🔍 _${usedPrefix}ytsearch *<texto>*_
-┣ ඬ⃟ 🔍 _${usedPrefix}playstore *<texto>*_
+┣ ඬ⃟ 🔍 _${usedPrefix}pelisplus *<ваш текст>*_
+┣ ඬ⃟ 🔍 _${usedPrefix}modapk *<ваш текст>*_
+┣ ඬ⃟ 🔍 _${usedPrefix}google *<ваш текст>*_
+┣ ඬ⃟ 🔍 _${usedPrefix}letra *<ваш текст>*_
+┣ ඬ⃟ 🔍 _${usedPrefix}wikipedia *<ваш текст>*_
+┣ ඬ⃟ 🔍 _${usedPrefix}ytsearch *<ваш текст>*_
+┣ ඬ⃟ 🔍 _${usedPrefix}playstore *<ваш текст>*_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< Команды для группы />* 
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 💎 _${usedPrefix}добавить *<numero>*_
-┣ ඬ⃟ 💎 _${usedPrefix}kick *<@tag>*_
-┣ ඬ⃟ 💎 _${usedPrefix}kick2 *<@tag>*_
-┣ ඬ⃟ 💎 _${usedPrefix}listanum *<texto>*_
-┣ ඬ⃟ 💎 _${usedPrefix}kicknum *<texto>*_
-┣ ඬ⃟ 💎 _${usedPrefix}grupo *<abrir / cerrar>*_
-┣ ඬ⃟ 💎 _${usedPrefix}grouptime *<opcion> <tiempo>*_
-┣ ඬ⃟ 💎 _${usedPrefix}promote *<@tag>*_
-┣ ඬ⃟ 💎 _${usedPrefix}demote *<@tag>*_
-┣ ඬ⃟ 💎 _${usedPrefix}admins *<texto>*_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
-┣ ඬ⃟ 💎 _${usedPrefix}demote *<@tag>*_
-┣ ඬ⃟ 💎 _${usedPrefix}infogroup_
-┣ ඬ⃟ 💎 _${usedPrefix}resetlink_
-┣ ඬ⃟ 💎 _${usedPrefix}link_
-┣ ඬ⃟ 💎 _${usedPrefix}setname *<texto>*_
-┣ ඬ⃟ 💎 _${usedPrefix}setdesc *<texto>*_
-┣ ඬ⃟ 💎 _${usedPrefix}invocar *<texto>*_
-┣ ඬ⃟ 💎 _${usedPrefix}setприветствие *<texto>*_
-┣ ඬ⃟ 💎 _${usedPrefix}setbye *<texto>*_
-┣ ඬ⃟ 💎 _${usedPrefix}hidetag *<texto>*_
-┣ ඬ⃟ 💎 _${usedPrefix}hidetag *<audio>*_
-┣ ඬ⃟ 💎 _${usedPrefix}hidetag *<video>*_
-┣ ඬ⃟ 💎 _${usedPrefix}hidetag *<imagen>*_
-┣ ඬ⃟ 💎 _${usedPrefix}warn *<@tag>*_
-┣ ඬ⃟ 💎 _${usedPrefix}unwarn *<@tag>*_
-┣ ඬ⃟ 💎 _${usedPrefix}listwarn_
-┣ ඬ⃟ 💎 _${usedPrefix}fantasmas_
-┣ ඬ⃟ 💎 _${usedPrefix}destraba_
-┣ ඬ⃟ 💎 _${usedPrefix}setpp *<imagen>*_
+┣ ඬ⃟ 💎 _${usedPrefix}добавить *<номер без +>*_
+┣ ඬ⃟ 💎 _${usedPrefix}снести *<@номер>*_
+┣ ඬ⃟ 💎 _${usedPrefix}удалить *<@номер>*_
+┣ ඬ⃟ 💎 _${usedPrefix}группу *<открыть / закрыть>*_
+┣ ඬ⃟ 💎 _${usedPrefix}датьадмина *<@номер>*_
+┣ ඬ⃟ 💎 _${usedPrefix}снятьадмина *<@номер>*_
+┣ ඬ⃟ 💎 _${usedPrefix}админы *<ваш текст>*_ (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)
+┣ ඬ⃟ 💎 _${usedPrefix}инфогруппы
+┣ ඬ⃟ 💎 _${usedPrefix}сброситьссылку
+┣ ඬ⃟ 💎 _${usedPrefix}ссылка
+┣ ඬ⃟ 💎 _${usedPrefix}изменитьназвание *<ваш текст>*_
+┣ ඬ⃟ 💎 _${usedPrefix}изменитьописание *<ваш текст>*_
+┣ ඬ⃟ 💎 _${usedPrefix}нарушение *<@номер>*_
+┣ ඬ⃟ 💎 _${usedPrefix}снятьнарушение *<@номер>*_
+┣ ඬ⃟ 💎 _${usedPrefix}списокнарушителей
+┣ ඬ⃟ 💎 _${usedPrefix}призраки
+┣ ඬ⃟ 💎 _${usedPrefix}важно
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
@@ -192,20 +180,20 @@ ${readMore}
 ┣ ඬ⃟ 🧧 _${usedPrefix}toptt *<video / audio>*_
 ┣ ඬ⃟ 🧧 _${usedPrefix}tovideo *<sticker>*_
 ┣ ඬ⃟ 🧧 _${usedPrefix}tourl *<video / imagen / audio>*_
-┣ ඬ⃟ 🧧 _${usedPrefix}tts *<idioma> <texto>*_
-┣ ඬ⃟ 🧧 _${usedPrefix}tts *<efecto> <texto>*_
+┣ ඬ⃟ 🧧 _${usedPrefix}tts *<idioma> <ваш текст>*_
+┣ ඬ⃟ 🧧 _${usedPrefix}tts *<efecto> <ваш текст>*_
 ┗━━━━━━━━━━━━━━━━┛
 
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< 𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝕐 𝕃𝕆𝔾𝕆𝕊 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🖍️ _${usedPrefix}logos *<efecto> <texto>*_
-┣ ඬ⃟ 🖍️ _${usedPrefix}logochristmas *<texto>*_
-┣ ඬ⃟ 🖍️ _${usedPrefix}logocorazon *<texto>*_
-┣ ඬ⃟ 🖍️ _${usedPrefix}ytcomment *<texto>*_
-┣ ඬ⃟ 🖍️ _${usedPrefix}hornycard *<@tag>*_
-┣ ඬ⃟ 🖍️ _${usedPrefix}simpcard *<@tag>*_
-┣ ඬ⃟ 🖍️ _${usedPrefix}lolice *<@tag>*_
+┣ ඬ⃟ 🖍️ _${usedPrefix}logos *<efecto> <ваш текст>*_
+┣ ඬ⃟ 🖍️ _${usedPrefix}logochristmas *<ваш текст>*_
+┣ ඬ⃟ 🖍️ _${usedPrefix}logocorazon *<ваш текст>*_
+┣ ඬ⃟ 🖍️ _${usedPrefix}ytcomment *<ваш текст>*_
+┣ ඬ⃟ 🖍️ _${usedPrefix}hornycard *<@номер>*_
+┣ ඬ⃟ 🖍️ _${usedPrefix}simpcard *<@номер>*_
+┣ ඬ⃟ 🖍️ _${usedPrefix}lolice *<@номер>*_
 ┣ ඬ⃟ 🖍️ _${usedPrefix}itssostupid_
 ┣ ඬ⃟ 🖍️ _${usedPrefix}pixelar_
 ┣ ඬ⃟ 🖍️ _${usedPrefix}blur_
@@ -299,15 +287,15 @@ ${readMore}
 ┏━━━━━━━━━━━━━━━━┓
 ┃ *< ℍ𝔼ℝℝ𝔸𝕄𝕀𝔼ℕ𝕋𝔸𝕊 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🛠️ _${usedPrefix}chatgpt *<texto>*_
+┣ ඬ⃟ 🛠️ _${usedPrefix}chatgpt *<ваш текст>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}delchatgpt
-┣ ඬ⃟ 🛠️ _${usedPrefix}gptvoz *<texto>*_
-┣ ඬ⃟ 🛠️ _${usedPrefix}dall-e *<texto>*_
-┣ ඬ⃟ 🛠️ _${usedPrefix}spamwa *<numero|texto|cantidad>*_
+┣ ඬ⃟ 🛠️ _${usedPrefix}gptvoz *<ваш текст>*_
+┣ ඬ⃟ 🛠️ _${usedPrefix}dall-e *<ваш текст>*_
+┣ ඬ⃟ 🛠️ _${usedPrefix}spamwa *<numero|ваш текст|cantidad>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}tamaño *<cantidad> <imagen / video>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}readviewonce *<imagen / video>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}clima *<país> <ciudad>*_
-┣ ඬ⃟ 🛠️ _${usedPrefix}encuesta *<texto1|texto2...>*_
+┣ ඬ⃟ 🛠️ _${usedPrefix}encuesta *<ваш текст1|ваш текст2...>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}afk *<motivo>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}ocr *<responde a imagen>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}hd *<responde a imagen>*_
@@ -316,10 +304,10 @@ ${readMore}
 ┣ ඬ⃟ 🛠️ _${usedPrefix}del *<mensaje>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}whatmusic *<audio>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}readqr *<imagen (QR)>*_
-┣ ඬ⃟ 🛠️ _${usedPrefix}qrcode *<texto>*_
-┣ ඬ⃟ 🛠️ _${usedPrefix}readmore *<texto1| texto2>*_
-┣ ඬ⃟ 🛠️ _${usedPrefix}styletext *<texto>*_
-┣ ඬ⃟ 🛠️ _${usedPrefix}traducir *<texto>*_
+┣ ඬ⃟ 🛠️ _${usedPrefix}qrcode *<ваш текст>*_
+┣ ඬ⃟ 🛠️ _${usedPrefix}readmore *<ваш текст1| ваш текст2>*_
+┣ ඬ⃟ 🛠️ _${usedPrefix}styletext *<ваш текст>*_
+┣ ඬ⃟ 🛠️ _${usedPrefix}traducir *<ваш текст>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}nowa *<numero>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}covid *<pais>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}horario_
@@ -345,8 +333,8 @@ ${readMore}
 ┣ ඬ⃟ 💵 _${usedPrefix}buy_
 ┣ ඬ⃟ 💵 _${usedPrefix}buyall_
 ┣ ඬ⃟ 💵 _${usedPrefix}verificar_
-┣ ඬ⃟ 💵 _${usedPrefix}robar *<cantidad> <@tag>*_
-┣ ඬ⃟ 💵 _${usedPrefix}transfer *<tipo> <cantidad> <@tag>*_
+┣ ඬ⃟ 💵 _${usedPrefix}robar *<cantidad> <@номер>*_
+┣ ඬ⃟ 💵 _${usedPrefix}transfer *<tipo> <cantidad> <@номер>*_
 ┣ ඬ⃟ 💵 _${usedPrefix}unreg *<numero de serie>*_
 ┗━━━━━━━━━━━━━━━━┛
 
@@ -365,18 +353,18 @@ ${readMore}
 ┣ ඬ⃟ 👽 _${usedPrefix}scircle *<imagen>*_
 ┣ ඬ⃟ 👽 _${usedPrefix}sremovebg *<imagen>*_
 ┣ ඬ⃟ 👽 _${usedPrefix}semoji *<tipo> <emoji>*_
-┣ ඬ⃟ 👽 _${usedPrefix}qc *<texto>*_
-┣ ඬ⃟ 👽 _${usedPrefix}attp *<texto>*_
-┣ ඬ⃟ 👽 _${usedPrefix}attp2 *<texto>*_
-┣ ඬ⃟ 👽 _${usedPrefix}attp3 *<texto>*_
-┣ ඬ⃟ 👽 _${usedPrefix}ttp *<texto>*_
-┣ ඬ⃟ 👽 _${usedPrefix}ttp2 *<texto>*_
-┣ ඬ⃟ 👽 _${usedPrefix}ttp3 *<texto>*_
-┣ ඬ⃟ 👽 _${usedPrefix}ttp4 *<texto>*_
-┣ ඬ⃟ 👽 _${usedPrefix}ttp5 *<texto>*_
-┣ ඬ⃟ 👽 _${usedPrefix}pat *<@tag>*_
-┣ ඬ⃟ 👽 _${usedPrefix}slap *<@tag>*_
-┣ ඬ⃟ 👽 _${usedPrefix}kiss *<@tag>*_
+┣ ඬ⃟ 👽 _${usedPrefix}qc *<ваш текст>*_
+┣ ඬ⃟ 👽 _${usedPrefix}attp *<ваш текст>*_
+┣ ඬ⃟ 👽 _${usedPrefix}attp2 *<ваш текст>*_
+┣ ඬ⃟ 👽 _${usedPrefix}attp3 *<ваш текст>*_
+┣ ඬ⃟ 👽 _${usedPrefix}ttp *<ваш текст>*_
+┣ ඬ⃟ 👽 _${usedPrefix}ttp2 *<ваш текст>*_
+┣ ඬ⃟ 👽 _${usedPrefix}ttp3 *<ваш текст>*_
+┣ ඬ⃟ 👽 _${usedPrefix}ttp4 *<ваш текст>*_
+┣ ඬ⃟ 👽 _${usedPrefix}ttp5 *<ваш текст>*_
+┣ ඬ⃟ 👽 _${usedPrefix}pat *<@номер>*_
+┣ ඬ⃟ 👽 _${usedPrefix}slap *<@номер>*_
+┣ ඬ⃟ 👽 _${usedPrefix}kiss *<@номер>*_
 ┣ ඬ⃟ 👽 _${usedPrefix}dado_
 ┣ ඬ⃟ 👽 _${usedPrefix}wm *<packname> <author>*_
 ┣ ඬ⃟ 👽 _${usedPrefix}stickermarker *<efecto> <imagen>*_
@@ -398,8 +386,8 @@ ${readMore}
 ┣ ඬ⃟ 👑 _${usedPrefix}leavegc_
 ┣ ඬ⃟ 👑 _${usedPrefix}cajafuerte_
 ┣ ඬ⃟ 👑 _${usedPrefix}blocklist_
-┣ ඬ⃟ 👑 _${usedPrefix}block *<@tag / numero>*_
-┣ ඬ⃟ 👑 _${usedPrefix}unblock *<@tag / numero>*_
+┣ ඬ⃟ 👑 _${usedPrefix}block *<@номер / numero>*_
+┣ ඬ⃟ 👑 _${usedPrefix}unblock *<@номер / numero>*_
 ┣ ඬ⃟ 👑 _${usedPrefix}включить *restrict*_
 ┣ ඬ⃟ 👑 _${usedPrefix}выключить *restrict*_
 ┣ ඬ⃟ 👑 _${usedPrefix}включить *autoread*_
@@ -420,35 +408,35 @@ ${readMore}
 ┣ ඬ⃟ 👑 _${usedPrefix}выключить *аудио_bot*_
 ┣ ඬ⃟ 👑 _${usedPrefix}включить *antispam*_
 ┣ ඬ⃟ 👑 _${usedPrefix}выключить *antispam*_
-┣ ඬ⃟ 👑 _${usedPrefix}msg *<texto>*_
+┣ ඬ⃟ 👑 _${usedPrefix}msg *<ваш текст>*_
 ┣ ඬ⃟ 👑 _${usedPrefix}banchat_
 ┣ ඬ⃟ 👑 _${usedPrefix}unbanchat_
-┣ ඬ⃟ 👑 _${usedPrefix}resetuser *<@tag>*_
-┣ ඬ⃟ 👑 _${usedPrefix}banuser *<@tag>*_
-┣ ඬ⃟ 👑 _${usedPrefix}unbanuser *<@tag>*_
-┣ ඬ⃟ 👑 _${usedPrefix}dardiamantes *<@tag> <cantidad>*_
-┣ ඬ⃟ 👑 _${usedPrefix}añadirxp *<@tag> <cantidad>*_
-┣ ඬ⃟ 👑 _${usedPrefix}banuser *<@tag>*_
-┣ ඬ⃟ 👑 _${usedPrefix}bc *<texto>*_
-┣ ඬ⃟ 👑 _${usedPrefix}bcchats *<texto>*_
-┣ ඬ⃟ 👑 _${usedPrefix}bcgc *<texto>*_
+┣ ඬ⃟ 👑 _${usedPrefix}resetuser *<@номер>*_
+┣ ඬ⃟ 👑 _${usedPrefix}banuser *<@номер>*_
+┣ ඬ⃟ 👑 _${usedPrefix}unbanuser *<@номер>*_
+┣ ඬ⃟ 👑 _${usedPrefix}dardiamantes *<@номер> <cantidad>*_
+┣ ඬ⃟ 👑 _${usedPrefix}añadirxp *<@номер> <cantidad>*_
+┣ ඬ⃟ 👑 _${usedPrefix}banuser *<@номер>*_
+┣ ඬ⃟ 👑 _${usedPrefix}bc *<ваш текст>*_
+┣ ඬ⃟ 👑 _${usedPrefix}bcchats *<ваш текст>*_
+┣ ඬ⃟ 👑 _${usedPrefix}bcgc *<ваш текст>*_
 ┣ ඬ⃟ 👑 _${usedPrefix}bcgc2 *<audio>*_
 ┣ ඬ⃟ 👑 _${usedPrefix}bcgc2 *<video>*_
 ┣ ඬ⃟ 👑 _${usedPrefix}bcgc2 *<imagen>*_
-┣ ඬ⃟ 👑 _${usedPrefix}bcbot *<texto>*_
+┣ ඬ⃟ 👑 _${usedPrefix}bcbot *<ваш текст>*_
 ┣ ඬ⃟ 👑 _${usedPrefix}cleartpm_
 ┣ ඬ⃟ 👑 _${usedPrefix}restart_
 ┣ ඬ⃟ 👑 _${usedPrefix}update_
 ┣ ඬ⃟ 👑 _${usedPrefix}banlist_
-┣ ඬ⃟ 👑 _${usedPrefix}addprem *<@tag> <tiempo>*_
-┣ ඬ⃟ 👑 _${usedPrefix}addprem2 *<@tag> <tiempo>*_
-┣ ඬ⃟ 👑 _${usedPrefix}addprem3 *<@tag> <tiempo>*_
-┣ ඬ⃟ 👑 _${usedPrefix}addprem4 *<@tag> <tiempo>*_
-┣ ඬ⃟ 👑 _${usedPrefix}delprem *<@tag>*_
+┣ ඬ⃟ 👑 _${usedPrefix}addprem *<@номер> <tiempo>*_
+┣ ඬ⃟ 👑 _${usedPrefix}addprem2 *<@номер> <tiempo>*_
+┣ ඬ⃟ 👑 _${usedPrefix}addprem3 *<@номер> <tiempo>*_
+┣ ඬ⃟ 👑 _${usedPrefix}addprem4 *<@номер> <tiempo>*_
+┣ ඬ⃟ 👑 _${usedPrefix}delprem *<@номер>*_
 ┣ ඬ⃟ 👑 _${usedPrefix}listcmd_
 ┣ ඬ⃟ 👑 _${usedPrefix}setppbot *<responder a imagen>*_
-┣ ඬ⃟ 👑 _${usedPrefix}addcmd *<texto> <responder a sticker/imagen>*_
-┣ ඬ⃟ 👑 _${usedPrefix}delcmd *<responder a sticker/imagen con comando o texto asignado>*_
+┣ ඬ⃟ 👑 _${usedPrefix}addcmd *<ваш текст> <responder a sticker/imagen>*_
+┣ ඬ⃟ 👑 _${usedPrefix}delcmd *<responder a sticker/imagen con comando o ваш текст asignado>*_
 ┣ ඬ⃟ 👑 _${usedPrefix}saveimage
 ┣ ඬ⃟ 👑 _${usedPrefix}viewimage
 ┗━━━━━━━━━━━━━━━━┛`.trim();
