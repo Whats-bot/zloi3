@@ -26,8 +26,8 @@
 - TIENES IDEAS DE PLUGINS O QUIERES OBTENER MAS PLUGINS? DA CLICK EN [https://github.com/theh2so4/Mystic-Plugins](https://github.com/theh2so4/Mystic-Plugins)
 
 
-### `—◉ 👾 ACTIVAR EN TERMUX 👾` 
-- ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
+### `—◉ 👾 Установка в термукс 👾` 
+- Вводить команды по порядку:
 ```bash
 cd && termux-setup-storage
 ```
