@@ -18,17 +18,17 @@ const handler = async (m, {conn, command, args, text, usedPrefix}) => {
     } else if (command === 'play2') {
       additionalText = 'video 🎥';
     }
-    const texto1 = `*◉——⌈🔊 YOUTUBE PLAY 🔊⌋——◉*\n
-❏ 📌 *Titulo:* ${yt_play[0].title}
-❏ 📆 *Publicado:* ${yt_play[0].ago}
-❏ ⌚ *Duracion:* ${secondString(yt_play[0].duration.seconds)}
-❏ 👀 *Vistas:* ${`${MilesNumber(yt_play[0].views)}`}
-❏ 👤 *Autor:* ${yt_play[0].author.name}
-❏ ⏯️ *Canal:* ${yt_play[0].author.url}
-❏ 🆔 *ID:* ${yt_play[0].videoId}
-❏ 🪬 *Tipo:* ${yt_play[0].type}
-❏ 🔗 *Link:* ${yt_play[0].url}\n
-❏ *_Enviando ${additionalText}, aguarde un momento．．．_*`.trim();
+    const texto1 = `*◉——⌈🔊 Загрузка с ютюба 🔊⌋——◉*\n
+❏ 📌 *Название:* ${yt_play[0].title}
+❏ 📆 *Опубликовано:* ${yt_play[0].ago}
+❏ ⌚ *Продолжительность:* ${secondString(yt_play[0].duration.seconds)}
+❏ 👀 *Просмотров:* ${`${MilesNumber(yt_play[0].views)}`}
+❏ 👤 *Автор:* ${yt_play[0].author.name}
+❏ ⏯️ *Канал:* ${yt_play[0].author.url}
+❏ 🆔 *ИД:* ${yt_play[0].videoId}
+❏ 🪬 *Тип:* ${yt_play[0].type}
+❏ 🔗 *Ссылка:* ${yt_play[0].url}\n
+❏ *_Скачиваю ${additionalText}, минутку ожидания．．．_*`.trim();
     conn.sendMessage(m.chat, {image: {url: yt_play[0].thumbnail}, caption: texto1}, {quoted: m});
     if (command == 'play') {
       try {      
