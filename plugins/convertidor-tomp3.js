@@ -10,5 +10,5 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   conn.sendMessage(m.chat, {audio: audio.data, mimetype: 'audio/mpeg'}, {quoted: m});
 };
 handler.alias = ['tomp3', 'ваудио'];
-handler.command = /^to(mp3|audio)$/i;
+handler.command = /^в(мп3|аудио)$/i;
 export default handler;
