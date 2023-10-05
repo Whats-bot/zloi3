@@ -17,7 +17,7 @@ const handler = async (m, {conn, usedPrefix, command}) => {
       '-shortest',
     ], 'mp3', 'mp4');
   }
-  await conn.sendFile(m.chat, out, 'error.mp4', '*DONE*', m, 0, {thumbnail: out});
+  await conn.sendFile(m.chat, out, 'error.mp4', '*Кайфуй от видоса из стикера*', m, 0, {thumbnail: out});
 };
 handler.help = ['tovideo'];
 handler.tags = ['sticker'];
