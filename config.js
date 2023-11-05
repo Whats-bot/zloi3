@@ -9,7 +9,7 @@ import moment from 'moment-timezone';
 
 global.owner = [
   ['79524197466', '👑 Mystic - Creador 👑', true],
-  ['79524197466', '💫 Mystic - Collaborator 1 💫', true],
+  ['79081840670', '💫 Mystic - Collaborator 1 💫', true],
   ['79524197466', '💫 Mystic - Collaborator 2 💫', true],
   ['79524197466', '💫 Mystic - Collaborator 3 💫', true],
   ['79524197466', '💫 Mystic - Collaborator 4 💫', true],
@@ -21,8 +21,8 @@ global.owner = [
   
 ];
 
-global.suittag = ['79524197466'];
-global.prems = ['79524197466'];
+global.suittag = ['79081840670'];
+global.prems = ['79081840670'];
 
 global.packname = '(☞ﾟ∀ﾟ)☞';
 global.author = '★JoKeR★';
