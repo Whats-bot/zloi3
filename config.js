@@ -8,7 +8,7 @@ import axios from 'axios';
 import moment from 'moment-timezone';
 
 global.owner = [
-  ['79524197466', '👑 Mystic - Creador 👑', true],
+  ['79081840670', '👑 Mystic - Creador 👑', true],
   ['79081840670', '💫 Mystic - Collaborator 1 💫', true],
   ['79524197466', '💫 Mystic - Collaborator 2 💫', true],
   ['79524197466', '💫 Mystic - Collaborator 3 💫', true],
