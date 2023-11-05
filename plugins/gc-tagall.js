@@ -5,8 +5,8 @@ const handler = async (m, {isOwner, isAdmin, conn, text, participants, args, com
     throw false;
   }
   const pesan = args.join` `;
-  const oi = `*Сообщение:* ${pesan}`;
-  let teks = `*⺀𝙸 ВНИМАНИЕ ГРУППА⺀*\n\n❏ ${oi}\n\n❏ *УЧАСТНИКИ:*\n`;
+  const oi = `*Сообщение участникам:* ${pesan}`;
+  let teks = `*⺀𝙸 ВНИМАНИЕ ГРУППА⺀*\n\n❏ ${oi}\n\n❏ *УЧАСТНИКИ ОБРАТИТЕ ВНИМАНИЕ НА СООБЩЕНИЕ ВЫШЕ:*\n`;
   for (const mem of participants) {
     teks += `┣➥ @${mem.id.split('@')[0]}\n`;
   }
